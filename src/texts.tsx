@@ -1,23 +1,23 @@
 const texts = [
     {
         id: 1,
-        text: "Pitää porkkanoista",
-        answer: "Jänis"
+        text: "Likes carrots",
+        answer: "Rabbit"
     },
     {
         id: 2,
-        text: "Kaivautuu maahan",
-        answer: "Myyrä"
+        text: "Digs into ground",
+        answer: "Mole"
     },
     {
         id: 3,
-        text: "Kehrää sylissä",
-        answer: "Kissa"
+        text: "Purrs on your lap",
+        answer: "Cat"
     },
     {
         id: 4,
-        text: "Lentää taivaalla",
-        answer: "Lokki"
+        text: "Flies in the sky",
+        answer: "Sparrow"
     }
 ];
 

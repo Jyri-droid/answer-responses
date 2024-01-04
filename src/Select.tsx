@@ -3,7 +3,7 @@ import React from 'react'
 const Select = (props: any) => {
     return (
         <fieldset>
-            <label htmlFor={props.label}>Valitse oikea vastaus</label>
+            <label htmlFor={props.label}>Select correct answer</label>
             <select
             /*name={}
             id={}
@@ -11,12 +11,12 @@ const Select = (props: any) => {
             value={} */
             >
                 <option value="default" disabled>
-                - Valitse -
+                - Select -
                 </option>
                 {props.options.map((element) => <option>{element}</option>)}
-                <optgroup label="Jo valittu">
+                <optgroup label="Already selected">
                     <option>
-                     Valinta 1
+                     Choice 1
                     </option>
                 </optgroup>
             </select>

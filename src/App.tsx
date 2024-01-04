@@ -11,8 +11,8 @@ function App() {
     <section>
       <article>
         <i className="material-symbols-outlined large-icon">cognition</i>
-        <h1>Valitse oikea vastaus</h1>
-        <p>Valitse alasvetovalikoista oikeat vastaukset ja sijoita ne oikeisiin kohtiin</p>
+        <h1>Choose right answers</h1>
+        <p>Select answers from the dropdown and place them where they belong</p>
         <main>
           {texts.map((object, index) => 
             <TaskBox 
