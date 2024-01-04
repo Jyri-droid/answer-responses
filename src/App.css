@@ -1,38 +1,106 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Display", arial, sans-serif;
+  background-color: black;
+  color: rgb(210,210,210);
+  padding: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.task-box-container {
+  width: calc(50% - 0.5rem);
+  border: 2px solid rgb(50,50,50);
+  border-radius: 0.75rem;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+select {
+  border: 2px solid rgb(50,50,50);
+  background-color: transparent;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  color: turquoise;
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 0.75rem 0 0 0;
 }
+
+p {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.large-icon {
+  font-size: 5rem;
+}
+
+.result-container {
+  border: 2px solid rgb(150,150,150);
+  border-radius: 2rem;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  margin: 0 auto 1rem auto;
+}
+
+.result-container > p {
+  margin: 0;
+}
+
+.result-container > i {
+  margin-right: 0.25rem;
+}
+
+.correct {
+  border-color: turquoise;
+  color: turquoise;
+}
+
+.wrong {
+  border-color: rgb(150,150,150);
+  color: rgb(150,150,150);
+}
+
+.all-correct-container {
+  margin: 0 auto;
+  color: turquoise;
+}
+
+.result-container, .all-correct-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
