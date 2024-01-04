@@ -1,6 +1,6 @@
 {
   "name": "answer-responses",
-  "homepage": "/answer-responses/#",
+  "homepage": "/answer-responses",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
