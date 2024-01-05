@@ -11,7 +11,7 @@ function App() {
     <section>
       <article>
         <i className="material-symbols-outlined large-icon">cognition</i>
-        <h1>Choose correct answers</h1>
+        <h1>Quiz</h1>
 
         <main>
           {texts.map((object, index) => 
