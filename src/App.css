@@ -47,6 +47,7 @@ select {
   color: white;
   font-family: "SF Pro Display", arial, sans-serif;
   margin-bottom: 0.5rem;
+  width: 75%;
 }
 
 h1 {
