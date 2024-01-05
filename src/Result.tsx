@@ -1,10 +1,13 @@
 import React from 'react'
 
 const Result = (props: any) => {
-    return <div className="result-container correct">
-        <i className="material-symbols-outlined">check</i>
-        <p>Correct</p>
-    </div>
+    const isCorrect: boolean = props.correctAnswers.includes(props.id);
+    if (!props.isEmpty) {
+        return <div className={isCorrect ? "result-container correct" :  "result-container false"}>
+            <i className="material-symbols-outlined">{isCorrect ? "check": "toys_and_games"}</i>
+            <p>{isCorrect ? "Correct" : "Try again!"}</p>
+        </div>
+    }
 }
 
 export default Result;

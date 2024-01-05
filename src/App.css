@@ -49,7 +49,7 @@ select {
 h1 {
   font-weight: 300;
   font-size: 3rem;
-  margin: 0;
+  margin: 0 0 1.25rem 0;
 }
 
 h2 {
@@ -68,7 +68,6 @@ p {
 }
 
 .result-container {
-  border: 2px solid rgb(150,150,150);
   border-radius: 2rem;
   width: max-content;
   padding: 0.5rem 1rem;
@@ -84,18 +83,29 @@ p {
 }
 
 .correct {
-  border-color: turquoise;
+  border: 1px solid turquoise;
   color: turquoise;
 }
 
-.wrong {
-  border-color: rgb(150,150,150);
-  color: rgb(150,150,150);
+.false {
+  border: 1px solid rgb(200,200,200);
+  color: rgb(200,200,200);
 }
 
 .all-correct-container {
   margin: 0 auto;
   color: turquoise;
+  animation: 1s ease-in 1 slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .result-container, .all-correct-container {
