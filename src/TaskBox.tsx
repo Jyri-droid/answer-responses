@@ -22,9 +22,9 @@ texts.forEach((object: Text) => !options.includes(object.answer) && options.push
 
 const TaskBox = (props: Props) => {
     const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        const value = event.target.value;
-        const index = Number(event.target.id);
-        const copy = [...props.selection];
+        const value: string = event.target.value;
+        const index: number = Number(event.target.id);
+        const copy: string[] = [...props.selection];
         copy.splice(index, 1, value);
         props.setSelection(copy);
     };
