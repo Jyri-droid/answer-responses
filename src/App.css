@@ -127,3 +127,13 @@ p {
 }
 
 
+/* Responsivity */
+
+@media only screen and (max-width: 800px) {
+  main {
+    display: block;
+  }
+  .task-box-container {
+    width: 100%;
+  }
+}
