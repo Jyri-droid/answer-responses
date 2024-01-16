@@ -130,6 +130,8 @@ p {
 /* Responsivity */
 
 @media only screen and (max-width: 800px) {
+
+
   main {
     display: block;
   }
@@ -139,4 +141,14 @@ p {
     margin-top: 1rem;
   }
 
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    padding: 0.25rem;
+  }
+  select {
+    height: 2rem;
+    font-size: 1rem;
+  }
 }
