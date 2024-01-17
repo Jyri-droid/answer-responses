@@ -15,6 +15,7 @@ function App() {
       <article>
         <i className="material-symbols-outlined large-icon">cognition</i>
         <h1>Quiz</h1>
+        <p>Which animal? Place each animal to its right description.</p>
         <main>
           {texts.map((object, index) => 
             <TaskBox 
